@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Notes App</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="images/favicon.png">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">Notes Application</h1>
+            <h2 class="header__subtitle">Take notes and never forget</h2>
+        </div>
+    </header>
+    <div class="actions">
+        <div class="actions__container">
+            <input type="text" id="search-note" class="input" placeholder="search note">
+            <select id="sort-by" class="dropdown">
+                <option value="byEdited">Sort by last edited time</option>
+                <option value="byCreated">Sort by created time</option>
+                <option value="byAlpha">Sort by alphabetic</option>
+            </select>
+        </div>
+    </div>
+    <div class="container">
+        <div id="notes"></div>
+        <form id="add-notes">
+            <button class="button">Create Note</button>
+        </form>
+    </div>
+    <script src="scripts/index-bundle.js"></script>
+</body>
+
+</html>
